@@ -442,13 +442,15 @@ body {
                     background-color: rgba(255, 255, 255, .1);
                 }
 
-                &__btn {
-                    color: #7f6d78;
-                    background-color: #d1cbd1;
-                }
-
                 &:nth-child(3n) {
                     background-color: rgba(255, 255, 255, .05);
+                }
+
+                &:hover {
+                    .cards-item__btn {
+                        color: #7f6d78;
+                        background-color: #d1cbd1;
+                    }  
                 }
             }
         }

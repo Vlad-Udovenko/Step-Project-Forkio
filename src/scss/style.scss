@@ -1,0 +1,371 @@
+a {
+    text-decoration: none;
+}
+
+.container {
+    min-width: 320px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-container {
+    background-color: #27262a;
+    padding: 10px;
+    width: 100%;
+}
+
+.header {
+    padding: 20px 0;
+    position: relative;
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+        margin-left: 3%;
+        background-image: url(../img/header_logo.png);
+        width: 43px;
+        height: 41px;
+        vertical-align: middle;
+
+        &_text {
+            display: none;
+        }
+    }
+
+    &__navBar {
+        margin-right: 3%;
+        vertical-align: middle;
+
+        &_toggle {
+            .line {
+                display: block;
+                background-color: #fff;
+                width: 26px;
+                height: 2px;
+                margin-bottom: 6px;
+                border-radius: 5px;
+
+                &_short {
+                    width: 21px;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+
+    &__menu {
+        position: absolute;
+        background-color: #333333;
+        left: 5%;
+        right: 5%;
+        width: 90%;
+        top: 80px;
+        display: flex;
+        flex-direction: column;
+        display: none;
+
+        &_items {
+            display: block;
+            color: white;
+            font-size: 20px;
+            border-bottom: 2px solid #3b3b3b;
+            padding: 23px 0 36px 33px;
+            margin-bottom: 8px;
+            position: relative;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        &_items_block {
+            position: relative;
+        }
+
+        &_items_block::before {
+            position: absolute;
+            content: "";
+            left: 0;
+            width: 8px;
+            height: 53px;
+            top: 10%;
+            background-color: #8d81ac;
+        }
+
+        &_items:hover {
+            color: rgba(141, 129, 172, 255);
+        }
+    }
+}
+
+.button {
+    border-radius: 50px;
+    background-color: #8d81ac;
+    color: white;
+    vertical-align: middle;
+    padding: 12px 25px;
+    font-weight: 700;
+    font-family: sans-serif;
+    cursor: pointer;
+
+    &__top-section {
+        padding: 22px 0;
+        font-weight: bold;
+        text-transform: capitalize;
+        font-size: 20px;
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+        bottom: -85px;
+        z-index: 1;
+    }
+
+}
+
+.top-section-wrapper {
+    background-image: url(../img/top-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.container_top-section {
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+
+    &__header {
+        font-weight: bold;
+        font-size: 40px;
+        margin: 0;
+        padding-top: 40px;
+
+    }
+
+    &__subheader {
+        color: rgba(141, 129, 172, 255);
+        font-size: 23px;
+        font-weight: 200;
+    }
+
+    &__text {
+        color: rgba(132, 142, 151, 255);
+        font-weight: 200;
+        margin-bottom: 350px;
+    }
+
+    &__smallText {
+        position: relative;
+        bottom: -80px;
+        z-index: 1;
+        color: rgba(132, 142, 151, 255);
+        text-align: center;
+    }
+}
+
+
+
+
+.about-fork-wrapper {
+    background-image: url(../img/about-fork-bg.png);
+    width: 100%;
+    padding: 0 10px;
+}
+
+.container_about-fork {
+    color: white;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-content: space-around;
+    flex-direction: column;
+    background-position: center;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.container_about-fork::after {
+    margin: 30px auto;
+    position: absolute;
+    content: "";
+    bottom: 0;
+    width: 90%;
+    left: 5%;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+
+
+}
+
+.section-header {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.about-fork {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+
+    &__img {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        height: auto;
+        align-self: center;
+    }
+
+    &__text {
+        margin: 40px 30px;
+        text-align: center;
+        font-weight: bold;
+        font-style: italic;
+        letter-spacing: 0.5px;
+        line-height: 25px;
+
+    }
+}
+
+.container_about-fork_text {
+    display: none;
+}
+
+@media screen and (min-width: 481px) {
+
+    .header {
+        margin-bottom: 50px;
+    }
+
+    .header__logo {
+        position: relative;
+        cursor: pointer;
+    }
+
+    .header__logo_text {
+        display: block;
+        position: absolute;
+        right: -100px;
+        color: rgba(141, 129, 172, 255);
+        font-family: sans-serif;
+        font-size: 24px;
+        top: 17%;
+    }
+
+    .header__navBar {
+        display: none;
+    }
+
+    .header__menu {
+        display: flex;
+        flex-direction: row;
+        background-color: #27262a;
+        width: 100%;
+        color: rgba(141, 129, 172, 255);
+        left: 0;
+        justify-content: space-around;
+        align-content: space-around;
+    }
+
+    .header__menu_items {
+        border-bottom: none;
+        color: rgba(141, 129, 172, 255);
+        margin-bottom: 0;
+        padding: 8px 0 10px;
+        cursor: pointer;
+    }
+
+    .header__menu_items_block::before {
+        content: none;
+    }
+
+    .button__top-section {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .container_about-fork {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .about-fork {
+        width: 49%;
+    }
+
+    .container_about-fork_text {
+        display: block;
+        font-size: 14px;
+        color: rgba(162, 145, 165, 255);
+        text-align: center;
+        width: 90%;
+        margin: 20px auto;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    .header__menu {
+        width: 40%;
+        bottom: 0;
+        left: 35%;
+        top: 15px;
+        width: 50%;
+        padding: 8px 0px 10px;
+
+        &_items:hover {
+            color: rgba(255, 255, 255, 255);
+        }
+    }
+
+    .header__logo:hover {
+        background-image: url(../img/header_logo_hover.png)
+    }
+
+    .header__logo:hover>div {
+        color: white;
+    }
+
+    .header__logo .header__logo_text:hover {
+        color: white;
+    }
+
+    .button {
+        margin-right: 30px;
+    }
+
+    .button:hover {
+        background-color: #fff;
+        color: #8d81ac;
+    }
+
+    .header {
+        margin-bottom: 0;
+    }
+
+    .section-header {
+        width: 100%;
+    }
+
+    .container_top-section__header {
+        font-size: 120px;
+    }
+
+    .button__top-section {
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    .about-fork {
+        width: 33.3%;
+    }
+
+}

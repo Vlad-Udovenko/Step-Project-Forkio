@@ -308,7 +308,7 @@ body {
 
     .pricing-block {
         position: relative;
-        background: url(dist/img/Layer.png);
+        background: url(../img/Layer.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 0% 0%;
@@ -414,7 +414,7 @@ body {
     .pricing-block {
 
         position: relative;
-        background: url(dist/img/Layer.png) 0% 50%/cover repeat;
+        background: url(../img/Layer.png) 0% 50%/cover repeat;
         z-index: 0;
 
         &::after {

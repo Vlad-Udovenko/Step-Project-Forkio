@@ -1,7 +1,7 @@
 let btn =document.querySelector(".header__navBar");
 let menu =document.querySelector(".header__menu");
 let menuItems = document.querySelectorAll(".header__menu_items");
-if(document.body.clientWidth < 481){x
+if(document.body.clientWidth < 481){
 
 btn.addEventListener("click",function(){
 

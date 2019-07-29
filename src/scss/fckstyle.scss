@@ -436,10 +436,19 @@ body {
 
             &-item {
                 margin-right: 20px;
-                background-color: rgba(255, 255, 255, .2);
-
+                background-color: rgba(255, 255, 255, .09);
+                
                 &__type {
                     background-color: rgba(255, 255, 255, .1);
+                }
+
+                &__btn {
+                    color: #7f6d78;
+                    background-color: #d1cbd1;
+                }
+
+                &:nth-child(3n) {
+                    background-color: rgba(255, 255, 255, .05);
                 }
             }
         }

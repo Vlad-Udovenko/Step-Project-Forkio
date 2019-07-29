@@ -12,16 +12,14 @@ btn.addEventListener("click",function(){
         menu.style.display = "flex";
     }
 
-})
+});
 
 menu.addEventListener("click", function(e){
     for(i=0 ; i<menu.children.length ;i++){
         menu.children[i].classList.remove("header__menu_items_block");
     }
     e.target.classList.add("header__menu_items_block");
-
-
-    })
+    });
 }
 
 

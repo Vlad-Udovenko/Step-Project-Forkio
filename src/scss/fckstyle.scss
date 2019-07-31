@@ -150,6 +150,7 @@ body {
         &-item {
             min-width: 256px;
             max-width: 257px;
+            min-height: 465px;
             background-color: #5f5161;
             display: flex;
             flex-direction: column;
@@ -211,7 +212,7 @@ body {
 
             &__duration {
                 position: relative;
-                color: #7c707e;
+                color: #968a98;
                 margin: 0;
                 font-size: 17px;
                 font-weight: 400;
@@ -308,7 +309,7 @@ body {
 
     .pricing-block {
         position: relative;
-        background: url(../img/Layer.png);
+        background: linear-gradient(rgba(0,0,0,0.11),rgba(255,255,255,0.41)), url(../img/Layer.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 0% 0%;
@@ -414,8 +415,9 @@ body {
     .pricing-block {
 
         position: relative;
-        background: url(../img/Layer.png) 0% 50%/cover repeat;
+        background: linear-gradient(rgba(0,0,0,0.11),rgba(255,255,255,0.41)), url(../img/Layer.png) 0% 50%/cover repeat;
         z-index: 0;
+        box-shadow: inset 0 43px 29px 0 rgba(95,71,100,1);
 
         &::after {
             position: absolute;
@@ -443,7 +445,7 @@ body {
                 }
 
                 &:nth-child(3n) {
-                    background-color: rgba(255, 255, 255, .05);
+                    background-color: rgba(0,0,0,0.3);
                 }
 
                 &:hover {

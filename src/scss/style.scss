@@ -99,6 +99,7 @@ a {
 }
 
 .button {
+    border: 1px solid transparent;
     border-radius: 50px;
     background-color: #8d81ac;
     color: white;
@@ -177,6 +178,7 @@ a {
     background-image: url(../img/about-fork-bg.png);
     width: 100%;
     padding: 0 10px;
+    box-shadow: inset 0 -40px 20px 0 rgba(74, 58, 84, 1);
 }
 
 .container_about-fork {
@@ -327,7 +329,7 @@ a {
     }
 
     .header__logo:hover {
-        background-image: url(../img/header_logo_hover.png)
+        background:url(../img/header_logo_hover.png);
     }
 
     .header__logo:hover>div {
@@ -345,6 +347,7 @@ a {
     .button:hover {
         background-color: #fff;
         color: #8d81ac;
+        border: 1px solid #8d81ac;
     }
 
     .header {

@@ -1,0 +1,86 @@
+@import "_config.scss";
+.button__top-section {
+    @include button;
+    padding: 22px 0;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 20px;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    bottom: -85px;
+    z-index: 1;
+}
+
+
+
+.top-section-wrapper {
+background-image: url(../img/top-bg.png);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+width: 100%;
+padding: 0 10px;
+}
+
+.container_top-section {
+color: white;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+width: 100%;
+height: 100%;
+text-align: center;
+font-family: 'Montserrat', sans-serif;
+
+&__header {
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0;
+    padding-top: 40px;
+
+}
+
+&__subheader {
+    color: rgba(141, 129, 172, 255);
+    font-size: 23px;
+    font-weight: 200;
+}
+
+&__text {
+    color: rgba(132, 142, 151, 255);
+    font-weight: 200;
+    margin-bottom: 350px;
+}
+
+&__smallText {
+    position: relative;
+    bottom: -80px;
+    z-index: 1;
+    color: rgba(132, 142, 151, 255);
+    text-align: center;
+}
+}
+
+@media screen and (min-width: 481px) {
+
+    .button__top-section {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 993px) {
+
+    .button__top-section {
+        width: 30%;
+        margin: 0 auto;
+        
+    }
+    .button__top-section:hover{
+        background-color: #fff;
+        color: #8d81ac;
+        border: 1px solid #8d81ac;
+    }
+
+}

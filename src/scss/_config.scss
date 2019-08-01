@@ -1,0 +1,22 @@
+@mixin button {
+    border-radius: 50px;
+    background-color: #8d81ac;
+    border: 1px solid transparent;
+    color: white;
+    vertical-align: middle;
+    font-weight: 700;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+.container {
+    min-width: 320px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
